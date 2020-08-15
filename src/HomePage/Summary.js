@@ -8,7 +8,7 @@ import {BuzzWords} from "../Chart/BuzzWords" ;
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: 40,
+        marginTop: 20,
         marginLeft:90,
         marginRight:90
     },

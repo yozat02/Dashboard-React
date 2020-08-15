@@ -8,13 +8,13 @@ import {Product} from './Product'
 import products from '../products.json' ;
 const useStyles = makeStyles((theme) => ({
     root: {
-        marginTop: 40,
+        marginTop: 20,
         marginLeft:90,
         marginRight:90
     },
     rootGrid: {
         flexGrow: 1,
-        padding: 50
+        padding: 40
       },
     productBuzz: {
         border: "1px solid",
@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
         color:"#ffffff",
         backgroundColor: "#b71c1c"
       },
+      select: {
+        marginTop : -40,
+        float: "right",
+        marginRight:-20
+      }
   }));
   
 export const ProductBuzz = () => {
@@ -63,6 +68,7 @@ export const ProductBuzz = () => {
         <h5>Product Buzz</h5>
         <div className={classes.productBuzz}>
         <div className={classes.rootGrid}>
+          <p className={classes.select}>Select (last week, month, quarter, year... )</p>
             <Grid container spacing={3}>
                 <Grid container item xs={12} spacing={3}>
                 <FormRow num={0} />

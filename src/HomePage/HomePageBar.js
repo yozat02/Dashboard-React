@@ -17,7 +17,7 @@ export const HomePageBar = ({user}) => {
     return (
     <div style={{textAlign : "center",border: "1px solid",height:50}}>
         <img src={"https://thegooddatafactory.com/images/logo-footer.png"} style={{width: 110,margin : 10,float:"left"}} />
-        <h4  style={{marginTop:15,display:"inline-block" }}>Dashboad</h4>
+        <h4  style={{marginTop:15,marginRight:120,display:"inline-block" }}>Dashboad</h4>
     <Avatar className={classes.avatar}>{name}</Avatar>
     </div>)
 }
