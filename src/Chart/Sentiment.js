@@ -16,8 +16,8 @@ export const Sentiment = () => {
     
     return (
         <div style={{marginTop:0}}>
-            <h4>Sentiments</h4>
-            <h4 style={{textAlign: "center"}}>21</h4>
+            <h4 style={{fontWeight : "bold"}}>Sentiments</h4>
+            <h3 style={{marginLeft:10}}>21</h3>
         <Chart
           data={data}
           height = "75"

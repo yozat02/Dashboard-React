@@ -3,6 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import {Sentiment} from "../Chart/Sentiment"
+import {ShareofComment} from "../Chart/ShareofComment";
+import {BuzzWords} from "../Chart/BuzzWords" ;
+
 const useStyles = makeStyles((theme) => ({
     root: {
         marginTop: 40,
@@ -17,6 +20,13 @@ const useStyles = makeStyles((theme) => ({
     summaryTable: {
         border: "1px solid",
         padding:30
+    },
+    cercle : {
+        width: 20,
+        height: 20,
+        borderRadius: 20,
+        border :"1px solid",
+        margin : 10
     }
   }));
 export const Summary = () => {
@@ -30,13 +40,17 @@ export const Summary = () => {
           <Sentiment />
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs</Paper>
+          <ShareofComment />
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>xs</Paper>
+          <div style={{display:"flex",marginTop:60}}>
+            <div className={classes.cercle}></div>
+            <div className={classes.cercle}></div>
+            <div className={classes.cercle}></div>
+          </div>
         </Grid>
         <Grid item xs={4}>
-          <Paper className={classes.paper}>xs</Paper>
+          <BuzzWords />
         </Grid>
       </Grid>
         </div>
