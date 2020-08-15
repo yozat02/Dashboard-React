@@ -1,8 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Avatar from '@material-ui/core/Avatar';
-import { deepOrange, deepPurple } from '@material-ui/core/colors';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import {Product} from './Product'
 import products from '../products.json' ;
@@ -47,15 +44,15 @@ const useStyles = makeStyles((theme) => ({
       }
   }));
   
-export const ProductBuzz = () => {
+export const ProductBuzz = ({history}) => {
     const classes = useStyles();
-    console.log(products)
+    //console.log(products)
     function FormRow({num}) {
         return (
           <React.Fragment>
             {products.map(product => (
-                <Grid item xs={2}>
-                <Product name={product.name} polarity={product.polarity}/>
+                <Grid key={product.name} item xs={2} >
+                <Product name={product.name} polarity={product.polarity} history={history} />
               </Grid>
             ))}
           </React.Fragment>

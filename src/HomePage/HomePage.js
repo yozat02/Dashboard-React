@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import { userActions } from '../_actions';
@@ -16,12 +15,13 @@ class HomePage extends React.Component {
     }
 
     render() {
-        const { user, users } = this.props;
+        const { user } = this.props;
+        const { history } = this.props;
         return (
             <div >
                 <HomePageBar user={user} />
                 <Summary />
-                <ProductBuzz />
+                <ProductBuzz history={history}/>
             </div>
         );
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
-
 const useStyles = makeStyles((theme) => ({
     paper1: {
         padding: theme.spacing(1),
@@ -26,12 +25,18 @@ const useStyles = makeStyles((theme) => ({
       },
   }));
 
-  export const Product = ({name,polarity}) => {
+  export const Product = ({name,polarity,history}) => {
     const classes = useStyles();
-    return (<div>
-        {polarity=="positive" && <Paper className={classes.paper1}>{name}</Paper>}
-        {polarity=="neutral" && <Paper className={classes.paper2}>{name}</Paper>}
-        {polarity=="negative" && <Paper className={classes.paper3}>{name}</Paper>}
+    
+
+    const handlClick = (name,history,polarity) => {
+      history.push(`/products/${name}/${polarity}`);
+    }
+    return (
+    <div onClick={() => {handlClick(name,history,polarity)}}>
+        {polarity==="positive" && <Paper className={classes.paper1}>{name}</Paper>}
+        {polarity==="neutral" && <Paper className={classes.paper2}>{name}</Paper>}
+        {polarity==="negative" && <Paper className={classes.paper3}>{name}</Paper>}
 
     </div>)
     
