@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width:600
+        width:800
     },
     rootGrid: {
         padding: 10,
@@ -24,7 +24,7 @@ export const Opinions =() => {
             <h5>Opinions</h5>
         <div className={classes.productBuzz}>
         <div className={classes.rootGrid}>
-        <div style={{marginTop:0}}>
+        <div style={{marginTop:0,marginLeft:70}}>
             <div style={{display: "flex",marginTop:20}} >
                 <p style={{color:"#00c853",fontSize:24,fontWeight : "bold"}}>Buzz Words</p>
                 <p style={{color:"#00c853",fontSize:13,marginLeft:50}}>Buzz Words</p>
@@ -38,8 +38,8 @@ export const Opinions =() => {
                 <p style={{color:"#b71c1c",fontSize:25,marginLeft:20,marginTop:-5}}>Buzz Words</p>
             </div>
         </div>
-        <div style={{width:5,backgroundColor:"#e0e0e0",height:150,marginLeft:300,marginTop:-120}}></div>
-        <div style={{float:"right" ,marginRight:100,marginTop:-150}}>
+        <div style={{width:5,backgroundColor:"#e0e0e0",height:130,marginLeft:370,marginTop:-120}}></div>
+        <div style={{float:"right" ,marginRight:180,marginTop:-130}}>
             <p style={{fontWeight:"bold"}}>Top 10 Opinions</p>
             <p>-Op1 ..</p>
             <p>-Op2 ..</p>

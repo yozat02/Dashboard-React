@@ -10,7 +10,7 @@ import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width:600
+        width:800
     },
     rootGrid: {
         padding: 10,
@@ -24,17 +24,31 @@ const useStyles = makeStyles((theme) => ({
 export const Itentions =() => {
     const classes = useStyles();
     const data = [
-        { year: '1950', population: 7.525 },
-        { year: '1960', population: 0 },
-        { year: '1970', population: 3.682 },
-        { year: '1980', population: 0 },
-        { year: '1990', population: 6.310 },
-        { year: '2000', population: 0 },
-        { year: '2010', population: 6.930 },
+        { key: '0', value: 0 },
+        { key: '9', value: 0 },
+        { key: '1', value: 7.525 },
+        { key: '2', value: 0 },
+        { key: '222', value: 0 },
+        { key: '12', value: 0 },
+        { key: '21', value: 0 },
+        { key: '3', value: 3.682 },
+        { key: '42', value: 0 },
+        { key: '22', value: 0 },
+        { key: '521', value: 0 },
+        { key: '442', value: 0 },
+        { key: '232', value: 0 },
+        { key: '21', value: 0 },
+        { key: '5', value: 6.310 },
+        { key: '6', value: 0 },
+        { key: '423', value: 0 },
+        { key: '232', value: 0 },
+        { key: '231', value: 0 },
+        { key: '7', value: 6.930 },
+        
       ];
     return (
         <div className={classes.root}>
-            <h5>Opinions</h5>
+            <h5>Itentions</h5>
         <div className={classes.productBuzz}>
         <div className={classes.rootGrid}>
         
@@ -42,11 +56,12 @@ export const Itentions =() => {
         <Chart
           data={data}
           height={130}
+          width={600}
         >
 
           <BarSeries
-            valueField="population"
-            argumentField="year"
+            valueField="value"
+            argumentField="key"
           />
         </Chart>
       </Paper>

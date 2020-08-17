@@ -11,11 +11,11 @@ import Calendar from 'react-calendar';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width:600
+        width:800
     },
     rootGrid: {
         padding: 20,
-        height:240   
+        height:220   
        },
     productBuzz: {
         border: "1px solid",
@@ -38,10 +38,10 @@ export const Sentiment =() => {
             <h5>Sentiments</h5>
         <div className={classes.productBuzz}>
         <div className={classes.rootGrid}>
-        <Paper style={{backgroundColor:"#00c853",backgroundImage:"linear-gradient(green,green,green,green,green,red,red,red,red, red)",width:300}}>
+        <Paper style={{backgroundColor:"#00c853",backgroundImage:"linear-gradient(green,green,green,green,green,red,red,red,red, red)",width:400}}>
         <Chart
           data={generateData(2.5, 12, 0.5)}
-          height={150}
+          height={170}
           
         >
           <SplineSeries
@@ -50,7 +50,7 @@ export const Sentiment =() => {
           />
         </Chart>
       </Paper>
-      <div style={{float:"right",marginTop:-150,marginLeft:350}}>
+      <div style={{float:"right",marginTop:-180,marginLeft:350,width:250}}>
       <Calendar
           value={new Date()}
         />

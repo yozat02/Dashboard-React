@@ -23,21 +23,21 @@ class HomePage extends React.Component {
         const { name } = this.props.match.params
         const { polarity } = this.props.match.params
         return (
-        <div >
+        <div style={{width:"100%"}}>
             <HomePageBar user={user} />
             <div>
                     <div class=" row" >
                         <div class=" col-lg-4" >
-                            <div style={{paddingLeft:0,paddingRight:250,paddingTop:100}}>
+                            <div style={{paddingLeft:0,paddingRight:250,paddingTop:60}}>
                                 <Product name={name} polarity={polarity} history={history} />
                             </div>
                             <p style={{fontWeight: "bold",marginTop:40,marginLeft:0}}>Auto generated insight</p>
-                            <p style={{marginTop:40,marginLeft:0 ,paddingRight:230}}>
+                            <p style={{marginTop:10,marginLeft:0 ,paddingRight:230}}>
                             Nunc aliquet tempor mattis. Nulla maximus consequat quam, ac maximus metus sodales quis. Sed cursus, augue vitae sollicitudin efficitur, massa purus blandit velit, at tempor est felis eget ex. Nunc pellentesque sem luctus dictum convallis. Praesent vulputate felis aliquam arcu porttitor, nec suscipit nibh bibendum. Proin rhoncus et nulla a dignissim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non ante sit amet leo semper pellentesque.
                             </p>
                         </div>
                         <div class=" col-lg-8" >
-                            <div style={{marginLeft:700,marginTop:-540}}>
+                            <div style={{marginLeft:500,marginTop:-480}}>
                             <Sentiment />
                             <Opinions />
                             <Itentions />

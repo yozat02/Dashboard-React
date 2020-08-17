@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       history.push(`/products/${name}/${polarity}`);
     }
     return (
-    <div onClick={() => {handlClick(name,history,polarity)}}>
+    <div onClick={() => {handlClick(name,history,polarity)}} style={{cursor: "pointer"}}>
         {polarity==="positive" && <Paper className={classes.paper1}>{name}</Paper>}
         {polarity==="neutral" && <Paper className={classes.paper2}>{name}</Paper>}
         {polarity==="negative" && <Paper className={classes.paper3}>{name}</Paper>}
