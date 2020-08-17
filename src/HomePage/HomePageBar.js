@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
         float: "right",
         marginRight:20,
-        marginTop:5
+        marginTop:5,
+        cursor: "pointer"
     },
     root: {
         maxWidth: 125,
