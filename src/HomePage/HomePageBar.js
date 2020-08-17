@@ -56,7 +56,7 @@ export const HomePageBar = ({user}) => {
           <h6>
             {user.firstName.charAt(0).toUpperCase() + user.firstName.slice(1)} {user.lastName.charAt(0).toUpperCase() + user.lastName.slice(1)} 
           </h6>
-          <a href="/login">
+          <a href="/Dashboard-React/login">
             Logout
           </a>
         </CardContent>
