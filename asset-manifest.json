@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/Dashboard-React/static/js/main.aba02c47.chunk.js",
-    "main.js.map": "/Dashboard-React/static/js/main.aba02c47.chunk.js.map",
+    "main.js": "/Dashboard-React/static/js/main.6c3eeded.chunk.js",
+    "main.js.map": "/Dashboard-React/static/js/main.6c3eeded.chunk.js.map",
     "runtime-main.js": "/Dashboard-React/static/js/runtime-main.aedca2a8.js",
     "runtime-main.js.map": "/Dashboard-React/static/js/runtime-main.aedca2a8.js.map",
     "static/js/2.05cc4942.chunk.js": "/Dashboard-React/static/js/2.05cc4942.chunk.js",
     "static/js/2.05cc4942.chunk.js.map": "/Dashboard-React/static/js/2.05cc4942.chunk.js.map",
     "index.html": "/Dashboard-React/index.html",
-    "precache-manifest.ee59b1f5069421b6b19fc662bfce0527.js": "/Dashboard-React/precache-manifest.ee59b1f5069421b6b19fc662bfce0527.js",
+    "precache-manifest.cf2346060fea3be9fc1a07268fa1bde9.js": "/Dashboard-React/precache-manifest.cf2346060fea3be9fc1a07268fa1bde9.js",
     "service-worker.js": "/Dashboard-React/service-worker.js",
     "static/js/2.05cc4942.chunk.js.LICENSE.txt": "/Dashboard-React/static/js/2.05cc4942.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aedca2a8.js",
     "static/js/2.05cc4942.chunk.js",
-    "static/js/main.aba02c47.chunk.js"
+    "static/js/main.6c3eeded.chunk.js"
   ]
 }
